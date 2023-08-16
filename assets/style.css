@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --music-image: url(../assets/img.jpg);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(54, 54, 54);
+    border-radius: 50px;
+}
+
+body {
+    background: rgb(34, 34, 34);
+}
+
+.topimage {
+    width: 100vw;
+    height: 50vh;
+    filter: blur(100px);
+    position: fixed;
+    z-index: -1;
+}
+
+.central {
+    margin: 0 auto;
+    height: 85vh;
+}
+
+.toptitle {
+    width: 20rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.toptitle .musicimage {
+    margin: 4rem auto;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toptitle .artist {
+    position: absolute;
+    color: white;
+    font-family: Roboto;
+    top: 10.5rem;
+    left: 30px;
+}
+
+.toptitle .music {
+    position: absolute;
+    top: 8.2rem;
+    left: 30px;
+    font-size: 25px;
+    font-family: Inter;
+    color: white;
+}
+
+.container {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 300px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+.container:hover {
+    background: rgba(0, 0, 0, 0.356);
+    cursor: pointer;
+}
+.container img {
+    width: 2.5rem;
+    border-radius: 10px;
+}
+.container p {
+    margin-left: 10px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.89);
+    font-family: 'Inter', sans-serif;
+}
